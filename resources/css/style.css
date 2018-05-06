@@ -1,0 +1,112 @@
+/*Universal styles*/
+
+html {
+  font-size: 16px;
+}
+
+body {
+
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  margin: 2rem 1.5rem;
+}
+
+.content {
+  display: flex;
+  padding: 2rem 1.5rem;
+}
+
+/*Header*/
+
+.container header {
+  height: 4rem;
+}
+
+header {
+  display: flex;
+  height: 4rem;
+  width: 100%;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #ffffff;
+  border: 1px solid black;
+}
+
+.logo {
+  display: flex;
+  height: 2.5rem;
+  align-items: center;
+  margin: 1rem 1.5rem;
+}
+
+.logo img {
+  height: 2.5rem;
+}
+
+.logo span {
+  color: #808080;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+/*Navigation Menu*/
+
+.navigation {
+  margin-right: 1.5rem;
+}
+
+.navigation li {
+  display: inline-block;
+  margin: 1rem 0.5rem;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #808080;
+  font-size: 1.2rem;
+}
+
+.navigation .mobile {
+  display: none;
+}
+
+/*Main Banner*/
+
+.banner {
+  background-color: #808080;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid red;
+}
+
+.text {
+  flex-direction: column;
+  width: 40%;
+  border: 1px solid red;
+}
+
+.container .learn img {
+  width: 60%;
+}
+
+.btn {
+
+}
+
+/*Second Section*/
