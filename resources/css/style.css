@@ -12,16 +12,28 @@ body {
 h1 {
   font-size: 3rem;
   font-weight: bold;
+  color: #404040
+}
+
+h2 {
+  font-size: 2rem;
+  color: #737373
+}
+
+span {
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  margin: .5rem;
+  color: #808080;
 }
 
 .container {
   display: flex;
+  width: ;
   margin: 2rem 1.5rem;
-}
-
-.content {
-  display: flex;
-  padding: 2rem 1.5rem;
 }
 
 .image_banner {
@@ -29,8 +41,19 @@ h1 {
 }
 
 .image_info {
-  height: auto;
   width: 35%;
+  margin: 1rem 1rem;
+}
+
+.image_content {
+  height: auto;
+  max-width: 40%;
+
+}
+
+.course_img {
+  height: auto;
+  width: 60%;
 }
 
 /*Header*/
@@ -51,7 +74,6 @@ header {
   left: 0;
   z-index: 100;
   background-color: #ffffff;
-  border: 1px solid black;
 }
 
 .logo {
@@ -66,7 +88,6 @@ header {
 }
 
 .logo span {
-
   margin: 1rem 0;
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -97,15 +118,22 @@ header {
 
 .banner {
   display: flex;
-  background-color: #808080;
   flex-direction: row;
   align-items: center;
+  background-color: #e6e6e6;
 }
 
-.text_content {
+.container .text_content {
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
+  justify-content: space-around;
+  padding: 1.5rem;
+
+}
+
+.text_content span {
+  margin: 1.5rem;
+  font-size: 1.5rem;
 }
 
 button {
@@ -116,10 +144,49 @@ button {
 
 /*Information Section*/
 
-.information {
+ .banner_two .text_content {
+   width: 60%;
+}
 
+.text_content span,
+  .text_content p {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
 }
 
 .mobile_image {
   display: none;
+}
+
+.image_content {
+  height: auto;
+  width: 40%;
+  flex-direction: row;
+}
+
+/*Courses section*/
+
+.courses {
+
+  justify-content: center;
+  margin: 2rem 4.5rem;
+}
+
+.course_content {
+  padding: 1rem;
+
+}
+
+
+/*Footer*/
+
+.footer {
+  display: flex;
+  height: 4rem;
+  width: 100%;
+  padding: 0;
+  margin: 1rem;
+  justify-content: space-between;
+  background-color: #ffffff;
 }
