@@ -5,6 +5,7 @@
     <title>Colmar Academy</title>
     <link href="resources/css/reset.css" type="text/css" rel="stylesheet">
     <link href="resources/css/style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Titan+One|Titillium+Web" rel="stylesheet">
   </head>
   <body>
 
@@ -15,22 +16,22 @@
     <header>
       <div class="logo">
         <img src="resources/images/ic-logo.svg" alt="ic-logo">
-          <span>ColmarAcademy</span>
+          <span class="black">Colmar</span><span>Academy</span>
       </div>
 
 <!--Navigation Menu-->
 
             <nav class="navigation">
-              <ul>
+              <ul class="desktop">
                 <li><a href="#campus">On Campus</a></li>
                 <li><a href="#online">Online</a></li>
                 <li><a href="#companies">For Companies</a></li>
-                <li><a href="#signin">Sign In</a></li>
+                <li><a href="..\Colmar_academy\signup.html">Sign In</a></li>
               </ul>
                 <ul class="navigation mobile">
                   <li><a href="#campus"><img src="resources/images/ic-on-campus.svg" alt="ic-campus"></a></li>
                   <li><a href="#online"><img src="resources/images/ic-online.svg" alt="ic-online"></a></li>
-                  <li><a href="signin"><img src="resources/images/ic-login.svg" alt="login"></a></li>
+                  <li><a href="..\Colmar_academy\signup.html">Sign In</a><img src="resources/images/ic-login.svg" alt="login"></a></li>
             </nav>
     </header>
 </div>
@@ -50,7 +51,7 @@
 
 <!--Information section-->
 
-<div class="container">
+<div id="campus" class="container">
 
     <div class="banner banner_two">
     <img class="image_banner" src="resources/images/information-main.jpg" alt="information_image">
@@ -69,7 +70,7 @@
             <div class="text_content">
               <h2>Orientation date</h2>
                 <span>Tue 10/11	&amp; Wed 10/12: 8am-3pm</span>
-                  <span><a href="readmore">Read More</a></span>
+                  <span><a href="..\Colmar_academy\readmore.html">Read More</a></span>
             </div>
     </div>
 
@@ -79,7 +80,7 @@
             <div class="text_content">
               <h2>Our campus</h2>
                 <span>Find which campus is close by you</span>
-                  <span><a href="readmore">Read More</a></span>
+                  <span><a href="..\Colmar_academy\readmore.html">Read More</a></span>
             </div>
       </div>
 
@@ -89,7 +90,7 @@
             <div class="text_content">
               <h2>Our quest lecture</h2>
                 <span>Join a keynote with Oliver Sack about music and medical treatment</span>
-                  <span><a href="readmore">Read More</a></span>
+                  <span><a href="..\Colmar_academy\readmore.html">Read More</a></span>
             </div>
       </div>
     </div>
@@ -99,7 +100,7 @@
 
 <!--Courses section-->
 
-<div class="container_courses">
+<div id="online" class="container_courses">
 
   <h1>Start Learning</h1>
 
@@ -165,7 +166,7 @@
 
 <!--last banner-->
 
-<h1 class="thesis">Thesis Exhibit</h1>
+<h1 id="companies" class="thesis">Thesis Exhibit</h1>
 
 <div class="container">
 
@@ -210,8 +211,8 @@
 
 <div class="footer">
   <p>&copy; 2016 Colmar Academy. All rights reserved</p>
-    <p><a href="terms">Terms</a>
-      <a href="privacy">Privacy</a></p>
+    <p><a href="..\Colmar_academy\readmore.html">Terms</a>
+      <a href="..\Colmar_academy\readmore.html">Privacy</a></p>
 </div>
 
 
