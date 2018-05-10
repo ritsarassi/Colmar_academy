@@ -39,7 +39,6 @@ span {
 .container {
   display: flex;
   margin: 0;
-  border: 1px solid yellow;
 }
 
 .image_banner {
@@ -63,7 +62,6 @@ span {
 .content {
     display: flex;
     align-items: center;
-    border: 1px solid red;
   }
 
 
@@ -129,21 +127,18 @@ header {
 /*Main Banner*/
 
 .first {
-  background-color: grey;
+  background-color: #d9d9d9;
   margin-top: 4rem;
 }
 
-.first .content  {
+.first .text_content  {
   flex-direction: column;
   width: 40%;
+  justify-content: center;
 }
 
 
 /*Second Banner*/
-
-.second {
-  border: 2px solid purple;
-}
 
 .banner_two .image_banner {
   width: 100%;
@@ -153,7 +148,6 @@ header {
   display: flex;
   max-width: 60%;
   flex-flow: column wrap;
-  border: 1px solid black;
 }
 
 
@@ -213,27 +207,42 @@ header {
 
 /*Last banner*/
 
-.last {
-  align-items: center;
-  flex-direction: column;
-  border: 1px solid black;
+.thesis {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 2rem 0;
+}
+
+.banner_last {
+  display: flex;
+  max-width: 60%;
+  flex-flow: column;
 }
 
 .video_banner {
-  width: 60%;
+  width: 100%;
+  height: auto;
 }
 
-.last .content {
-  width: 40%;
+.fisma {
+  background-color: #d9d9d9;
 }
+
+
 
 /*Footer*/
 
 .footer {
   display: flex;
   height: 4rem;
-  width: 100%;
+  max-width: 100%;
   padding: 0;
-  margin: 1rem;
+  margin: 1rem 1.5rem;
+  justify-content: space-between;
   background-color: #ffffff;
+}
+
+.footer p {
+  margin: 1rem;
 }
