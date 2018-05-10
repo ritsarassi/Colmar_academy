@@ -1,60 +1,71 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
 /*Universal styles*/
 
 html {
   font-size: 16px;
-  color:
-}
-
-body {
-
 }
 
 h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #404040
-}
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 0;
+  }
 
-h2 {
-  font-size: 2rem;
-  color: #737373
-}
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
 
 span {
-  font-size: 1.2rem;
-}
+    font-size: 1.4rem;
+    margin: .5rem 0;
+  }
 
-a {
-  text-decoration: none;
-  margin: .5rem;
-  color: #808080;
-}
+  a {
+    text-decoration: none;
+  }
+
+  p {
+    margin-top: 2rem;
+  }
 
 .container {
   display: flex;
-  width: ;
-  margin: 2rem 1.5rem;
+  margin: 0;
+  border: 1px solid yellow;
 }
 
 .image_banner {
   width: 60%;
-}
-
-.image_info {
-  width: 35%;
-  margin: 1rem 1rem;
-}
-
-.image_content {
   height: auto;
-  max-width: 40%;
-
+  margin-right: 1.5rem;
 }
 
-.course_img {
-  height: auto;
-  width: 60%;
-}
+.banner {
+    display: flex;
+    height: auto;
+    padding: 2.5rem 1.5rem;
+  }
+
+.text_content {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 1.5rem 1.5rem 1.5rem;
+  }
+
+.content {
+    display: flex;
+    align-items: center;
+    border: 1px solid red;
+  }
+
 
 /*Header*/
 
@@ -93,6 +104,7 @@ header {
   text-transform: uppercase;
 }
 
+
 /*Navigation Menu*/
 
 .navigation {
@@ -116,68 +128,104 @@ header {
 
 /*Main Banner*/
 
-.banner {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: #e6e6e6;
+.first {
+  background-color: grey;
+  margin-top: 4rem;
 }
 
-.container .text_content {
-  display: flex;
+.first .content  {
   flex-direction: column;
-  justify-content: space-around;
-  padding: 1.5rem;
-
+  width: 40%;
 }
 
-.text_content span {
-  margin: 1.5rem;
-  font-size: 1.5rem;
+
+/*Second Banner*/
+
+.second {
+  border: 2px solid purple;
 }
 
-button {
-  font-size: 1rem;
-  padding: .5rem 2.5rem;
-  background-color: #808080;
+.banner_two .image_banner {
+  width: 100%;
+  }
+
+.banner_two {
+  display: flex;
+  max-width: 60%;
+  flex-flow: column wrap;
+  border: 1px solid black;
 }
 
-/*Information Section*/
 
- .banner_two .text_content {
-   width: 60%;
+.banner_two span {
+  margin: 1.5rem 0;
 }
 
-.text_content span,
-  .text_content p {
-  margin-top: 2rem;
-  margin-bottom: 1.5rem;
-  align-items: center;
+.test {
+  display: flex;
+  flex-flow: column;
+  margin-top: 1.5rem;
+}
+
+.image_info {
+  width: 35%;
+  height: auto;
+  margin: 1rem;
+}
+
+.lecture {
+  background-color: #d9d9d9;
 }
 
 .mobile_image {
   display: none;
 }
 
-.image_content {
-  height: auto;
-  width: 40%;
-  flex-direction: row;
+
+/*Courses Banner*/
+
+
+.container_courses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 4rem;
+  background-color: #d9d9d9;
 }
 
-/*Courses section*/
-
-.courses {
-
+.banner_courses {
+  display: flex;
+  flex-flow: row wrap;
   justify-content: center;
-  margin: 2rem 4.5rem;
 }
 
-.course_content {
-  padding: 1rem;
+.content_course {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  width: 27%;
+  background-color: #ffffff;
+  }
 
+.course_img {
+  height: auto;
 }
 
+/*Last banner*/
+
+.last {
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.video_banner {
+  width: 60%;
+}
+
+.last .content {
+  width: 40%;
+}
 
 /*Footer*/
 
@@ -187,6 +235,5 @@ button {
   width: 100%;
   padding: 0;
   margin: 1rem;
-  justify-content: space-between;
   background-color: #ffffff;
 }
