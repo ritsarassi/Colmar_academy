@@ -143,16 +143,13 @@ color: #000000;
 @media only screen and (max-width: 700px) {
 
   .container header {
-    justify-content: space-around;
     overflow: hidden;
+    margin: 0 .5rem;
+    justify-content: center;
   }
 
   header {
     height: 4rem;
-  }
-
-  .logo {
-    margin: 0 1.5rem;
   }
 
   .logo span {
@@ -195,7 +192,7 @@ color: #000000;
     display: block;
   }
 
-  .mobile a {
+  .navigation a {
     margin: 0 1rem;
   }
 }
@@ -441,7 +438,8 @@ button:hover {
   }
 
   .video_banner {
-    width: 235%;
+    width: 100%;
+    overflow: hidden;
   }
 }
 
