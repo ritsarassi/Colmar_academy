@@ -31,6 +31,7 @@ h1 {
 span {
     font-size: 1.4rem;
     margin: .5rem 0;
+    letter-spacing: .5px;
     color: #999999;
   }
 
@@ -42,6 +43,16 @@ span {
     margin-top: 2rem;
     color: #bfbfbf;
   }
+
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+}
 
 .container {
   display: flex;
@@ -140,6 +151,10 @@ color: #000000;
     height: 4rem;
   }
 
+  .logo {
+    margin: 0 1.5rem;
+  }
+
   .logo span {
     display: none;
   }
@@ -179,6 +194,10 @@ color: #000000;
   .navigation .mobile {
     display: block;
   }
+
+  .mobile a {
+    margin: 0 1rem;
+  }
 }
 
 /*Main Banner*/
@@ -197,16 +216,16 @@ color: #000000;
 
 @media only screen and (max-width: 700px) {
   .first .text_content {
-    margin: 1rem 1rem;
+    margin: 1rem 0;
     align-items: center;
-    justify-content: center;
+    text-align: center;
   }
 }
 
 .first h1,
   .first span,
     .first button {
-      margin: 1.5rem;
+      margin: 1.5rem 0;
     }
 
     @media only screen and (max-width: 700px) {
@@ -251,7 +270,7 @@ button:hover {
       display: none;
     }
 
-    .banner_two .text_content {
+    .desktop {
       display: none;
     }
   }
@@ -260,6 +279,12 @@ button:hover {
   display: flex;
   max-width: 60%;
   flex-flow: column wrap;
+}
+
+.test .content {
+  display: flex;
+  flex-direction: row;
+  padding: .5rem;
 }
 
 
@@ -306,8 +331,15 @@ button:hover {
     background-color: #ffffff;
   }
 
+  .test .content {
+    display: flex;
+    flex-direction: column;
+  }
+
   .text_content {
+    display: flex;
     text-align: center;
+    margin: 0;
   }
 }
 
@@ -340,6 +372,40 @@ button:hover {
   height: auto;
 }
 
+@media only screen and (max-width: 700px) {
+
+.container_courses h1{
+  margin: 2rem 0 1rem 0;
+}
+
+  .course_img {
+    display: none;
+  }
+  .content_course span {
+    display: none;
+  }
+
+  .text_content h2 {
+    margin: 1rem 0 1.5rem 1rem;
+  }
+
+  .container_courses {
+    padding: 0;
+    background-color: #ffffff;
+  }
+
+  .banner_courses {
+    flex-direction: column;
+  }
+
+  .content_course {
+    width: 100%;
+    margin: .5rem;
+    border: 1px solid #595959;
+    background-color: #d9d9d9;
+  }
+}
+
 /*Last banner*/
 
 .thesis {
@@ -358,7 +424,6 @@ button:hover {
 
 .video_banner {
   width: 100%;
-  height: auto;
 }
 
 .fisma {
@@ -370,18 +435,14 @@ button:hover {
       display: none;
     }
 
-    .test .fisma,
-      .test .research {
+  .test .fisma,
+    .test .research {
       display: none;
-    }
+  }
 
-    .video_banner {
-      width: 100%;
-      height: auto;
-      padding: 1rem;
-      margin: 1rem;
-      border: 1px solid black;
-     }
+  .video_banner {
+    width: 235%;
+  }
 }
 
 /*Footer*/
@@ -407,7 +468,16 @@ button:hover {
 
 @media only screen and (max-width: 700px) {
   .footer {
-    max-width: 100%;
+    width: 100%;
+    justify-content: center;
     overflow: hidden;
+  }
+
+  .footer p {
+    margin: 1.5rem 0;
+  }
+
+  .footer a {
+    display: none;
   }
 }
