@@ -54,10 +54,25 @@ span {
   margin-right: 1.5rem;
 }
 
+@media only screen and (max-width: 700px) {
+  .image_banner {
+    width: 100%;
+    margin: 0;
+  }
+}
+
 .banner {
     display: flex;
     height: auto;
     padding: 2.5rem 1.5rem;
+  }
+
+  @media only screen and (max-width: 700px) {
+    .banner {
+      flex-direction: column;
+      padding: 0;
+      align-items: center;
+    }
   }
 
 .text_content {
@@ -113,6 +128,21 @@ header {
 color: #000000;
 }
 
+@media only screen and (max-width: 700px) {
+
+  .container header {
+    justify-content: space-around;
+  }
+
+  header {
+    height: 4rem;
+  }
+
+  .logo span {
+    display: none;
+  }
+}
+
 /*Navigation Menu*/
 
 .navigation {
@@ -139,6 +169,16 @@ color: #000000;
   display: none;
 }
 
+@media only screen and (max-width: 700px) {
+  .navigation .desktop {
+    display: none;
+  }
+
+  .navigation .mobile {
+    display: block;
+  }
+}
+
 /*Main Banner*/
 
 .first {
@@ -153,10 +193,26 @@ color: #000000;
   margin: 1.5rem;
 }
 
+@media only screen and (max-width: 700px) {
+  .first .text_content {
+    margin: 1rem 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .first h1,
   .first span,
     .first button {
       margin: 1.5rem;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .first h1,
+        .first span,
+          .first button {
+            margin: 1rem;
+          }
     }
 
 button {
@@ -169,6 +225,13 @@ button {
         margin: 1rem;
 }
 
+@media only screen and (max-width: 700px) {
+  button {
+    width: 100%;
+    margin: 0;
+  }
+}
+
 button:hover {
   background-color: #333333;
 }
@@ -179,6 +242,16 @@ button:hover {
 
 .banner_two .image_banner {
   width: 100%;
+  }
+
+  @media only screen and (max-width: 700px) {
+    .banner_two .image_banner {
+      display: none;
+    }
+
+    .banner_two .text_content {
+      display: none;
+    }
   }
 
 .banner_two {
@@ -204,6 +277,12 @@ button:hover {
   margin: 1rem;
 }
 
+@media only screen and (max-width: 700px) {
+  .image_info {
+    display: none;
+  }
+}
+
 .lecture {
   background-color: #d9d9d9;
 }
@@ -212,6 +291,19 @@ button:hover {
   display: none;
 }
 
+@media only screen and (max-width: 700px) {
+  .mobile_image {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: auto;
+    margin: 1rem;
+  }
+
+  .lecture {
+    background-color: #ffffff;
+  }
+}
 
 /*Courses Banner*/
 
