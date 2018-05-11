@@ -83,6 +83,7 @@ span {
 
 .content {
     display: flex;
+    flex-direction: column;
     align-items: center;
   }
 
@@ -132,6 +133,7 @@ color: #000000;
 
   .container header {
     justify-content: space-around;
+    overflow: hidden;
   }
 
   header {
@@ -294,14 +296,18 @@ button:hover {
 @media only screen and (max-width: 700px) {
   .mobile_image {
     display: flex;
-    flex-direction: column;
-    width: 35%;
+    width: 100%;
     height: auto;
+    padding: 1rem;
     margin: 1rem;
   }
 
   .lecture {
     background-color: #ffffff;
+  }
+
+  .text_content {
+    text-align: center;
   }
 }
 
@@ -359,6 +365,25 @@ button:hover {
   background-color: #d9d9d9;
 }
 
+@media only screen and (max-width: 700px) {
+  .banner_last .text_content {
+      display: none;
+    }
+
+    .test .fisma,
+      .test .research {
+      display: none;
+    }
+
+    .video_banner {
+      width: 100%;
+      height: auto;
+      padding: 1rem;
+      margin: 1rem;
+      border: 1px solid black;
+     }
+}
+
 /*Footer*/
 
 .footer {
@@ -378,4 +403,11 @@ button:hover {
 .footer a {
   margin: .5rem;
   color: #bfbfbf;
+}
+
+@media only screen and (max-width: 700px) {
+  .footer {
+    max-width: 100%;
+    overflow: hidden;
+  }
 }
