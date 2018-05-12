@@ -18,6 +18,7 @@ h1 {
     font-weight: bold;
     padding: 0;
     color: #4d4d4d;
+    text-shadow: 2px 2px #a65959;
     font-family: 'Titan One', cursive;
   }
 
@@ -134,6 +135,7 @@ header {
   margin: 1rem 0;
   font-size: 1.5rem;
   text-transform: uppercase;
+  text-shadow: 1px 1px #a65959;
 }
 
 .logo .black {
@@ -172,6 +174,7 @@ color: #000000;
   text-decoration: none;
   color: #808080;
   font-size: 1.2rem;
+  text-shadow: 1px 1px #000000;
 }
 
 .navigation a:hover {
@@ -190,6 +193,10 @@ color: #000000;
 
   .navigation .mobile {
     display: block;
+  }
+
+  .navigation a:hover {
+    color: red;
   }
 
   .navigation a {
@@ -252,6 +259,9 @@ button {
 }
 
 button:hover {
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: 1s;
   background-color: #333333;
 }
 
@@ -308,10 +318,6 @@ button:hover {
   }
 }
 
-.lecture {
-  background-color: #d9d9d9;
-}
-
 .mobile_image {
   display: none;
 }
@@ -323,10 +329,6 @@ button:hover {
     height: auto;
     padding: 1rem;
     margin: 1rem;
-  }
-
-  .lecture {
-    background-color: #ffffff;
   }
 
   .test .content {
@@ -370,6 +372,10 @@ button:hover {
   height: auto;
 }
 
+.mobile_hover {
+  display: none;
+}
+
 @media only screen and (max-width: 700px) {
 
 .container_courses h1{
@@ -393,8 +399,8 @@ button:hover {
   }
 
   .banner_courses {
-    width: 100%;
-    padding: 0 1rem;
+    width: 90%;
+    padding-right: 1.5rem;
     flex-direction: column;
   }
 
@@ -403,6 +409,15 @@ button:hover {
     margin: .5rem 1rem;
     border: 1px solid #595959;
     background-color: #d9d9d9;
+  }
+
+  .content_course:hover {
+    transition: 0.5s;
+    background-color: #595959;
+  }
+
+  .course_info span:hover {
+    color: #ffffff;
   }
 }
 
@@ -431,9 +446,6 @@ button:hover {
   width: 100%;
 }
 
-.fisma {
-  background-color: #d9d9d9;
-}
 
 @media only screen and (max-width: 700px) {
   .banner_last .text_content {
@@ -469,11 +481,18 @@ button:hover {
 
 .footer p {
   margin: 1.5rem;
+  text-shadow: 1px 1px #000000;
 }
 
 .footer a {
   margin: .5rem;
   color: #bfbfbf;
+  text-shadow: 1px 1px #000000;
+}
+
+.footer a:hover {
+  color: #000000;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 700px) {
