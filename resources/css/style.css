@@ -6,7 +6,7 @@ html {
 }
 
 
-/*Universal styles*/
+/* Universal styles */
 
 html {
   font-size: 16px;
@@ -45,16 +45,6 @@ span {
     color: #bfbfbf;
   }
 
-@media only screen and (max-width: 700px) {
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  h2 {
-    font-size: 1.7rem;
-  }
-}
-
 .container {
   display: flex;
   margin: 0;
@@ -66,25 +56,10 @@ span {
   margin-right: 1.5rem;
 }
 
-@media only screen and (max-width: 700px) {
-  .image_banner {
-    width: 100%;
-    margin: 0;
-  }
-}
-
 .banner {
     display: flex;
     height: auto;
     padding: 2.5rem 1.5rem;
-  }
-
-  @media only screen and (max-width: 700px) {
-    .banner {
-      flex-direction: column;
-      padding: 0;
-      align-items: center;
-    }
   }
 
 .text_content {
@@ -99,8 +74,31 @@ span {
     align-items: center;
   }
 
+  /* Change styles for mobile */
 
-/*Header*/
+  @media only screen and (max-width: 700px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.7rem;
+    }
+
+    .image_banner {
+      width: 100%;
+      margin: 0;
+    }
+
+    .banner {
+      flex-direction: column;
+      padding: 0;
+      align-items: center;
+    }
+  }
+
+
+/* Header styles*/
 
 .container header {
   height: 4rem;
@@ -142,6 +140,8 @@ header {
 color: #000000;
 }
 
+/* Change styles for mobile */
+
 @media only screen and (max-width: 700px) {
 
   .container header {
@@ -159,7 +159,7 @@ color: #000000;
   }
 }
 
-/*Navigation Menu*/
+/* Navigation Menu */
 
 .navigation {
   margin-right: 1.5rem;
@@ -186,6 +186,8 @@ color: #000000;
   display: none;
 }
 
+
+/* Sign in menu styles */
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
@@ -343,20 +345,31 @@ hr {
   margin: 1.5rem;
 }
 
-@media only screen and (max-width: 700px) {
-  .first .text_content {
-    width: 100%;
-    margin: 1rem 0;
-    align-items: center;
-    text-align: center;
-  }
-}
-
 .first h1,
   .first span,
     .first input {
       margin: 1.5rem 0;
     }
+
+.starthere {
+      width: 100%;
+      background-color: #595959;
+      border: black;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1rem;
+      margin: 1rem;
+      }
+
+.starthere:hover {
+      font-size: 1.2rem;
+      font-weight: bold;
+      transition: 1s;
+      background-color: #333333;
+      }
+
+/* Change styles for mobile */
 
     @media only screen and (max-width: 700px) {
       .first h1,
@@ -364,49 +377,23 @@ hr {
           .first input {
             margin: 1rem;
           }
+
+      .first .text_content {
+        width: 100%;
+        margin: 1rem 0;
+        align-items: center;
+        text-align: center;
+      }
+    .starthere {
+      width: 100%;
     }
 
-    input {
-        width: 100%;
-        background-color: #595959;
-        border: black;
-        color: white;
-        padding: 1rem;
-        text-align: center;
-        font-size: 1rem;
-        margin: 1rem;
 }
-
-@media only screen and (max-width: 700px) {
-  input {
-    width: 100%;
-    margin: 0;
-  }
-}
-
-.starthere:hover {
-  font-size: 1.2rem;
-  font-weight: bold;
-  transition: 1s;
-  background-color: #333333;
-}
-
-
 
 /*Second Banner*/
 
 .banner_two .image_banner {
   width: 100%;
-  }
-
-  @media only screen and (max-width: 700px) {
-    .banner_two .image_banner {
-      display: none;
-    }
-
-    .desktop {
-      display: none;
-    }
   }
 
 .banner_two {
@@ -438,17 +425,26 @@ hr {
   margin: 1rem;
 }
 
-@media only screen and (max-width: 700px) {
-  .image_info {
-    display: none;
-  }
-}
-
 .mobile_image {
   display: none;
 }
 
+/* Change styles for mobile */
+
 @media only screen and (max-width: 700px) {
+
+  .banner_two .image_banner {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+    }
+
+  .image_info {
+    display: none;
+  }
+
   .mobile_image {
     display: flex;
     width: 100%;
@@ -501,6 +497,8 @@ hr {
 .mobile_hover {
   display: none;
 }
+
+/* Change styles for mobile */
 
 @media only screen and (max-width: 700px) {
 
@@ -568,14 +566,15 @@ hr {
   width: 100%;
 }
 
+/* Change styles for mobile */
 
 @media only screen and (max-width: 700px) {
   .banner_last .text_content {
       display: none;
     }
 
-  .test .fisma,
-    .test .research {
+  .content_container .fisma,
+    .content_container .research {
       display: none;
   }
 
@@ -616,6 +615,8 @@ hr {
   color: #000000;
   font-weight: bold;
 }
+
+/* Change styles for mobile */
 
 @media only screen and (max-width: 700px) {
   .footer {
