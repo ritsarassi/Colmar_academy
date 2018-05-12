@@ -143,8 +143,8 @@ color: #000000;
 @media only screen and (max-width: 700px) {
 
   .container header {
+    width: 100%;
     overflow: hidden;
-    margin: 0 .5rem;
     justify-content: center;
   }
 
@@ -213,6 +213,7 @@ color: #000000;
 
 @media only screen and (max-width: 700px) {
   .first .text_content {
+    width: 100%;
     margin: 1rem 0;
     align-items: center;
     text-align: center;
@@ -392,12 +393,14 @@ button:hover {
   }
 
   .banner_courses {
+    width: 100%;
+    padding: 0 1rem;
     flex-direction: column;
   }
 
   .content_course {
     width: 100%;
-    margin: .5rem;
+    margin: .5rem 1rem;
     border: 1px solid #595959;
     background-color: #d9d9d9;
   }
@@ -412,11 +415,16 @@ button:hover {
   margin: 2rem 0;
 }
 
-.banner_last {
+
+ .banner_last {
   display: flex;
-  max-width: 60%;
-  flex-flow: column;
+  flex-flow: column wrap;
+  width: 60%;
   padding-bottom: 0;
+}
+
+.banner_last .test {
+  width: 40%;
 }
 
 .video_banner {
@@ -435,6 +443,10 @@ button:hover {
   .test .fisma,
     .test .research {
       display: none;
+  }
+
+  .banner_last {
+    width: 100%;
   }
 
   .video_banner {
