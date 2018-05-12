@@ -14,8 +14,7 @@
 <div class="container">
 
     <header>
-      <div class="logo">
-        <img src="resources/images/ic-logo.svg" alt="ic-logo">
+      <div class="logo"><a href="#home"><img src="resources/images/ic-logo.svg" alt="ic-logo"></a>
           <span class="black">Colmar</span><span>Academy</span>
       </div>
 
@@ -34,7 +33,8 @@
                   <li><a href="#signin" onclick="document.getElementById('signin').style.display='block'" style="width:auto;"><img src="resources/images/ic-login.svg" alt="login"></a></li>
                 </ul>
 
-                <!--Sign up content-->
+<!--Sign up content-->
+
                 <div id="signin" class="modal">
                   <span onclick="document.getElementById('signin').style.display='none'" class="close" title="Close Modal">&times;</span>
                     <form class="modal-content" action="/action_page.php">
@@ -82,9 +82,10 @@
 
 <!--Main Banner-->
 
-<div class="container">
+<div id="home" class="container">
   <div class="banner first">
     <img class="image_banner" src="resources/images/banner.jpg" alt="main banner">
+
       <div class="text_content">
         <h1>Learn something new everyday</h1>
           <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
@@ -101,6 +102,7 @@
 
     <div class="banner banner_two">
     <img class="image_banner" src="resources/images/information-main.jpg" alt="information_image">
+
       <div class="text_content">
         <h1 class="desktop">It doesn't hurt to keep practicing</h1>
           <span class="desktop">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat negue. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</span>
@@ -113,6 +115,7 @@
       <div class="content">
         <img class="image_info" src="resources/images/information-orientation.jpg" alt="orientation">
           <img class="mobile_image" src="resources/images/information-orientation-mobile.jpg" alt="orientation mobile">
+
             <div class="text_content">
               <h2>Orientation date</h2>
                 <span>Tue 10/11	&amp; Wed 10/12: 8am-3pm</span>
@@ -123,6 +126,7 @@
       <div class="content">
         <img class="image_info" src="resources/images/information-campus.jpg" alt="campus">
           <img class="mobile_image" src="resources/images/information-campus-mobile.jpg" alt="campus mobile">
+
             <div class="text_content">
               <h2>Our campus</h2>
                 <span>Find which campus is close by you</span>
@@ -133,6 +137,7 @@
       <div class="content lecture">
         <img class="image_info" src="resources\images\information-guest-lecture.jpg" alt="lecture">
           <img class="mobile_image" src="resources\images\information-guest-lecture-mobile.jpg" alt="lecture mobile">
+
             <div class="text_content">
               <h2>Our quest lecture</h2>
                 <span>Join a keynote with Oliver Sack about music and medical treatment</span>
@@ -140,6 +145,7 @@
             </div>
       </div>
     </div>
+    
 </div>
 </div>
 
@@ -153,6 +159,7 @@
 <div class="banner_courses">
     <div class="content_course">
       <img class="course_img" src="resources/images/course-software.jpg" alt="software">
+
       <div class="text_content">
         <h2>Software Engineering</h2>
           <span class="course_info">Courses</span>
@@ -162,6 +169,7 @@
 
 <div class="content_course">
   <img class="course_img" src="resources/images/course-computer-art.jpg" alt="computer art">
+
   <div class="text_content">
     <h2>Computer art</h2>
       <span class="course_info">Courses</span>
@@ -171,6 +179,7 @@
 
 <div class="content_course">
   <img class="course_img" src="resources/images/course-design.jpg" alt="design">
+
   <div class="text_content">
     <h2>Design</h2>
       <span class="course_info">Courses</span>
@@ -181,6 +190,7 @@
 
 <div class="content_course">
   <img class="course_img" src="resources/images/course-data.jpg" alt="data">
+
   <div class="text_content">
     <h2>Data</h2>
       <span class="course_info">Courses</span>
@@ -191,6 +201,7 @@
 
 <div class="content_course">
   <img class="course_img" src="resources/images/course-business.jpg" alt="business">
+
   <div class="text_content">
     <h2>Business</h2>
       <span class="course_info">Courses</span>
@@ -200,6 +211,7 @@
 
 <div class="content_course">
   <img class="course_img" src="resources/images/course-marketing.jpg" alt="marketing">
+
   <div class="text_content">
     <h2>Marketing</h2>
       <span class="course_info">Courses</span>
@@ -210,38 +222,37 @@
 </div>
 
 
-<!--last banner-->
+<!--Last banner-->
 
 <h1 id="companies" class="thesis">Thesis Exhibit</h1>
 
 <div class="container">
 
-
-
     <div class="banner banner_last">
       <video class="video_banner" onplaying="this.controls=false" loop="loop" autoplay src="resources/videos/thesis.mp4" alt="thesis video">
         Video isnt supported in your browser
       </video>
+
         <div class="text_content video_banner">
           <h1>Reimagine urban</h1>
             <span>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam er commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequuat ex. Etiam eget magna laoreet, efficitur doolor consequat, tristique ligula."</span>
         </div>
     </div>
 
-
 <div class="content_container">
 
       <div class="content fisma">
         <img class="image_info" src="resources/images/thesis-fisma.jpg" alt="thesis fisma">
+
             <div class="text_content">
               <h2>Fisma: Design and Prototype</h2>
             <span>Designer showcase of new prototype product</span>
-
-            </div>
-    </div>
+          </div>
+      </div>
 
       <div class="content research">
         <img class="image_info" src="resources/images/thesis-now-and-then.jpg" alt="thesis now and then">
+
             <div class="text_content">
               <h2>Now and then</h2>
             <span>Research study about New York</span>
@@ -250,16 +261,12 @@
     </div>
 </div>
 
-
-
 <!--Footer-->
 
-<div class="footer">
-  <p>&copy; 2016 Colmar Academy. All rights reserved</p>
-    <p><a href="..\Colmar_academy\readmore.html">Terms</a>
-      <a href="..\Colmar_academy\readmore.html">Privacy</a></p>
-</div>
-
-
+    <div class="footer">
+      <p>&copy; 2016 Colmar Academy. All rights reserved</p>
+        <p><a href="..\Colmar_academy\readmore.html">Terms</a>
+          <a href="..\Colmar_academy\readmore.html">Privacy</a></p>
+    </div>
   </body>
 </html>

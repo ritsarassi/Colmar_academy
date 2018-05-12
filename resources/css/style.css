@@ -208,8 +208,8 @@ input[type=text]:focus, input[type=password]:focus {
 button {
     background-color: #4CAF50;
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
+    padding: 1rem 1.5rem;
+    margin: .5rem 0;
     border: none;
     cursor: pointer;
     width: 100%;
@@ -223,7 +223,7 @@ button:hover {
 /* Extra styles for the cancel button */
 
 .cancelbtn {
-    padding: 14px 20px;
+    padding: 1rem 1.5rem;
     background-color: #f44336;
 }
 
@@ -237,7 +237,7 @@ button:hover {
 /* Add padding to container elements */
 
 .container_signin {
-    padding: 16px;
+    padding: 1rem;
 }
 
 /* The Modal (background) */
@@ -252,7 +252,7 @@ button:hover {
     height: 100%;
     overflow: auto;
     background-color: #474e5d;
-    padding-top: 50px;
+    padding-top: 3rem;
 }
 
 /* Modal Content/Box */
@@ -275,9 +275,9 @@ hr {
 
 .close {
     position: absolute;
-    right: 35px;
-    top: 15px;
-    font-size: 40px;
+    right: 2rem;
+    top: 1rem;
+    font-size: 2.5rem;
     font-weight: bold;
     color: #f1f1f1;
 }
@@ -301,15 +301,16 @@ hr {
 @media only screen and (max-width: 700px) {
     .cancelbtn, .signupbtn {
        width: 100%;
-    }
+  }
 
     .modal {
-        width: 80%;
-        height: 80%;
-        overflow: auto;
-        background-color: #474e5d;
-        padding-top: 50px;
-    }
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    overflow: auto;
+    background-color: #474e5d;
+    padding-top: 3rem;
+  }
 
   .navigation .desktop {
     display: none;
@@ -365,7 +366,7 @@ hr {
           }
     }
 
-input {
+    input {
         width: 100%;
         background-color: #595959;
         border: black;
