@@ -546,7 +546,7 @@ hr {
   }
 
   .content_course:hover {
-    transition: 0.5s;
+    
     background-color: #595959;
   }
 }
